@@ -30,6 +30,7 @@
 
     <modules>
         <module>umlanimal-domain</module>
+        <module>umlanimal-service</module>
         <module>umlanimal-service-impl</module>
         <module>umlanimal-test</module>
     </modules>
@@ -43,11 +44,17 @@
             <artifactId>umlanimal-domain</artifactId>
             <version>1.0-SNAPSHOT</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>umlanimal-service</artifactId>
+            </dependency>
+
             <dependency>
                 <groupId>org.example</groupId>
                 <artifactId>umlanimal-service-impl</artifactId>
-                <version>1.0-SNAPSHOT</version>
             </dependency>
+
             <!-- JUnit-->
             <!-- https://mvnrepository.com/artifact/junit/junit -->
             <dependency>
