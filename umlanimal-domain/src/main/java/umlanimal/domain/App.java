@@ -19,10 +19,10 @@ public class App {
         System.out.println(pigwidgeon.toString());
         //below works automatically because I have a toString method
         System.out.println(pigwidgeon);
-
         System.out.println(squeek);
-
         System.out.println(piff.toString());
+
+        //fixa tostring till alla
 
     }
 }

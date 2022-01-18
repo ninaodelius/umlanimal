@@ -2,11 +2,11 @@ package umlanimal.domain;
 public class Squirrel extends Animal {
 
     private int numOfConesInNest;
-    private boolean hungry;
+
 
     //constructor below
     public Squirrel(int numOfConesInNest,boolean hungry) {
-        super();
+        super(hungry);
         this.numOfConesInNest = numOfConesInNest;
         this.hungry = hungry;
     }
@@ -30,8 +30,10 @@ public class Squirrel extends Animal {
 
 
     @Override
-    public void eat(Object cheese){
+    public boolean eat(Object cheese){
+        /*if sats kan va här*/
         System.out.println("funkar för squirrel");
+        return false;
     }
 
     public boolean eat(boolean hungry, int numOfConesInNest){

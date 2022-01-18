@@ -1,7 +1,7 @@
 package umlanimal.domain;
 public class Owl extends Animal {
 
-    private boolean hungry;
+
     private int numOfSquirrelInNest;
     private int wingSpan;
     private int age;
@@ -9,7 +9,7 @@ public class Owl extends Animal {
 
     //constructor below
     public Owl(boolean hungry, int numOfSquirrelInNest, int wingSpan, int age) {
-        super();
+        super(hungry);
         this.hungry=hungry;
         this.numOfSquirrelInNest=numOfSquirrelInNest;
         this.wingSpan=wingSpan;
@@ -59,8 +59,10 @@ public class Owl extends Animal {
 
 
     @Override
-    public void eat(Object bean) {
+    public boolean eat(Object bean) {
         System.out.println("funkar för owl");
+        return false;
+
     }
 
     public boolean eat(boolean hungry, int numOfSquirrelInNest) {

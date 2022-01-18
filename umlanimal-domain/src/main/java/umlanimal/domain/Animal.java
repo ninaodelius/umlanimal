@@ -1,13 +1,17 @@
 package umlanimal.domain;
+public abstract class Animal {
+    protected int weight;
+    protected boolean hungry;
 
-abstract class Animal {
-    int weight;
-    boolean hungry;
+    public Animal(int weight, boolean hungry){
+        this.weight = weight;
+        this.hungry = hungry;
+    }
 
-    public abstract void eat(Object food);
+    public Animal(boolean hungry){
+        this.hungry = hungry;
+    }
 
-    /*public boolean eat(boolean hungry){
-        return hungry;
+    public abstract boolean eat(Object food);
 
-    }*/
 }
