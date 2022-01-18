@@ -1,3 +1,5 @@
+package se.nina;
+
 abstract class Animal {
     int weight;
     boolean hungry;

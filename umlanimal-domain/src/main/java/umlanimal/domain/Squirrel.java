@@ -1,11 +1,33 @@
-public class Squirrel extends Animal{
-        int numOfConesInNest;
-    boolean hungry;
+package umlanimal.domain;
+public class Squirrel extends Animal {
 
-    public Squirrel() {
-        int numOfConesInNest = 2;
-        boolean hungry = true;
+    private int numOfConesInNest;
+    private boolean hungry;
+
+    //constructor below
+    public Squirrel(int numOfConesInNest,boolean hungry) {
+        super();
+        this.numOfConesInNest = numOfConesInNest;
+        this.hungry = hungry;
     }
+
+
+    public int getNumOfConesInNest() {
+        return numOfConesInNest;
+    }
+
+    public void setNumOfConesInNest(int numOfConesInNest) {
+        this.numOfConesInNest = numOfConesInNest;
+    }
+
+    public boolean isHungry() {
+        return hungry;
+    }
+
+    public void setHungry(boolean hungry) {
+        this.hungry = hungry;
+    }
+
 
     @Override
     public void eat(Object cheese){
