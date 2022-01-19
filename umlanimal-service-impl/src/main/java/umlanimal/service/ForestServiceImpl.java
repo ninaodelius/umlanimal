@@ -11,7 +11,7 @@ public class ForestServiceImpl implements ForestService {
 
     @Override
     public Owl createOwl(int wingSpan) {
-        Owl owl = new Owl(true, 10, 10, 10);
+        Owl owl = new Owl(true,10,10);
         return owl;
     }
 
@@ -23,7 +23,7 @@ public class ForestServiceImpl implements ForestService {
 
     @Override
     public PineTree createPineTree(int age, boolean windy, int numOfAnimalsInTree, int numOfCones) {
-        PineTree pinetree = new PineTree(10, true, 10, 10);
+        PineTree pinetree = new PineTree(10);
         return pinetree;
     }
 

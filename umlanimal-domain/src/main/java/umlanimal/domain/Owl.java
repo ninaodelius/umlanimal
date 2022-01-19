@@ -1,21 +1,16 @@
 package umlanimal.domain;
 public class Owl extends Animal {
 
-
-    private int numOfSquirrelInNest;
     private int wingSpan;
     private int age;
 
-
     //constructor below
-    public Owl(boolean hungry, int numOfSquirrelInNest, int wingSpan, int age) {
+    public Owl(boolean hungry, int wingSpan, int age) {
         super(hungry);
         this.hungry=hungry;
-        this.numOfSquirrelInNest=numOfSquirrelInNest;
         this.wingSpan=wingSpan;
         this.age = age;
     }
-
 
     public int getAge() {
         return age;
@@ -29,18 +24,8 @@ public class Owl extends Animal {
     }
 
     public void setHungry(boolean hungry) {
-
         /*här kan man sätta en if sats*/
         this.hungry = hungry;
-    }
-
-    public int getNumOfSquirrelInNest() {
-        return numOfSquirrelInNest;
-    }
-
-    public void setNumOfSquirrelInNest(int numOfSquirrelInNest) {
-        /*här kan man sätta en if sats*/
-        this.numOfSquirrelInNest = numOfSquirrelInNest;
     }
 
     public int getWingSpan() {
@@ -54,9 +39,8 @@ public class Owl extends Animal {
 
     @Override
     public String toString() {
-        return "Is hungry: " + hungry + " Squirrels in nest: " + numOfSquirrelInNest + " Wingspan: " + wingSpan;
+        return "Is hungry: " + hungry + " Wingspan: " + wingSpan;
     }
-
 
     @Override
     public boolean eat(Object bean) {
@@ -65,13 +49,13 @@ public class Owl extends Animal {
 
     }
 
-    public boolean eat(boolean hungry, int numOfSquirrelInNest) {
+    public boolean eat(boolean hungry, PineTree ent) {
         boolean eat = false;
         if (hungry) {
-            if (numOfSquirrelInNest > 0 && numOfSquirrelInNest < 10) {
+            if (ent.getNumOfSquirrelsInNest() > 0 && ent.getNumOfSquirrelsInNest() < 10) {
                 System.out.println("Owl says nom nom nom");
                 eat = true;
-            } else if (numOfSquirrelInNest > 10) {
+            } else if (ent.getNumOfSquirrelsInNest() > 10) {
                 System.out.println("Owl is overrun by squirrels!");
             } else {
                 System.out.println("No food for owl today");

@@ -1,5 +1,5 @@
 package umlanimal.domain;
-public class Mouse {
+public class Mouse extends Animal{
     private int age;
     private boolean hungry;
     private int runningSpeed;
@@ -41,5 +41,11 @@ public class Mouse {
                 ", hungry=" + hungry +
                 ", runningSpeed=" + runningSpeed +
                 '}';
+    }
+
+    @Override
+    public boolean eat(Object food) {
+        System.out.println("funkar för mouse");
+        return false;
     }
 }

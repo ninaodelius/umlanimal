@@ -1,20 +1,25 @@
 package umlanimal.domain;
-import java.util.Arrays;
 import java.util.List;
 public class PineTree {
     private int age; //fält
     private boolean windy;
     private int numOfAnimalsInTree;
     private int numOfCones;
-    private List<String> squirrels;
+    private List<Squirrel> squirrels;
+    private Owl pigwidgeon;
 
     //constructor below
-    public PineTree(int age, boolean windy, int numOfAnimalsInTree, int numOfCones){
+    public PineTree(int age){
+        this.age = age;
+    }
+
+
+    public PineTree(int age, boolean windy, int numOfAnimalsInTree, int numOfCones, List<Squirrel> squirrels){
         this.age = age;
         this.windy = windy;
         this.numOfAnimalsInTree = numOfAnimalsInTree;
         this.numOfCones = numOfCones;
-        List<String> squirrels = Arrays.asList("piff","puff","babes");
+        this.pigwidgeon = pigwidgeon;
     }
 
     public int getAge() {
@@ -49,24 +54,23 @@ public class PineTree {
         this.numOfCones = numOfCones;
     }
 
-    public List<String> getSquirrels() {
+    public List<Squirrel> getSquirrels() {
         return squirrels;
     }
 
-    public void setSquirrels(List<String> squirrels) {
+    public int getNumOfSquirrelsInNest(){ return squirrels.size(); }
+
+    public void setSquirrels(List<Squirrel> squirrels) {
         this.squirrels = squirrels;
     }
 
-    public int getNumOfSquirrelsInNest(){
-        return squirrels.size();
+    public Owl getPigwidgeon(){
+        return pigwidgeon;
     }
 
-    /*public String team(List){
-        for (int squirrel: squirrel){
-            System.out.println("squirrel");
-        }
-    }*/
-
+    public void setPigwidgeon(Owl pigwidgeon){
+        this.pigwidgeon = pigwidgeon;
+    }
 
     public boolean fall(int age, boolean windy, int numOfAnimalsInTree){
         boolean fall = false;
