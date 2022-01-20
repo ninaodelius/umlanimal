@@ -21,12 +21,23 @@
         </dependency>
 
         <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>umlanimal-service</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>umlanimal-service-impl</artifactId>
+        </dependency>
+
+        <!-- junit-->
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
 
-
+        <!--spring -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
