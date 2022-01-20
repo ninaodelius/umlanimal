@@ -20,6 +20,7 @@ public class PineTree {
         this.numOfAnimalsInTree = numOfAnimalsInTree;
         this.numOfCones = numOfCones;
         this.pigwidgeon = pigwidgeon;
+        this.squirrels = squirrels;
     }
 
     public int getAge() {
