@@ -28,11 +28,14 @@
         <!-- versions -->
         <junit.version>4.13.1</junit.version>
         <spring.version>5.3.13</spring.version>
+        <mysql.verson>8.0.28</mysql.verson>
 
 
     </properties>
 
     <modules>
+        <module>umlanimal-dao</module>
+        <module>umlanimal-dao-impl</module>
         <module>umlanimal-domain</module>
         <module>umlanimal-service</module>
         <module>umlanimal-service-impl</module>
@@ -43,6 +46,13 @@
         <dependencies>
 
             <!--project -->
+
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>umlanimal-dao</artifactId>
+                <version>${project.verson}</version>
+            </dependency>
+
             <dependency>
             <groupId>org.example</groupId>
             <artifactId>umlanimal-domain</artifactId>
@@ -69,6 +79,15 @@
                 <version>${junit.version}</version>
                 <scope>test</scope>
             </dependency>
+
+
+            <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.verson}</version>
+            </dependency>
+
 
             <!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
             <dependency>

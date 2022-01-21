@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="umlanimal-dao" />
         <module name="umlanimal-test-unit" />
         <module name="umlanimal-domain" />
+        <module name="umlanimal-dao-impl" />
         <module name="umlanimal-service-impl" />
         <module name="umlanimal-service" />
       </profile>
