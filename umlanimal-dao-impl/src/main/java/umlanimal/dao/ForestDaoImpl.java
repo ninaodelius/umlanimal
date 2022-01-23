@@ -12,6 +12,7 @@ public class ForestDaoImpl implements ForestDao {
     Connection connection = null;
     PreparedStatement preparedstatement = null;
 
+    @Override
     public Connection getConnection() throws SQLException{
         return DriverManager.getConnection("jdbc:mysql://localhost:3306/Databashantering", "root", "root");
     }
