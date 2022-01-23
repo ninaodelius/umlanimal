@@ -15,10 +15,22 @@
     <packaging>jar</packaging>
 
     <dependencies>
+
+
+        <!--project -->
         <dependency>
             <groupId>org.example</groupId>
             <artifactId>umlanimal-dao</artifactId>
         </dependency>
+
+        <!-- mysql-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
     </dependencies>
+
+
 
 </project>

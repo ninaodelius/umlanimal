@@ -5,7 +5,18 @@ import umlanimal.domain.Owl;
 import umlanimal.domain.PineTree;
 import umlanimal.domain.Squirrel;
 
+import java.sql.*;
+
 public class ForestDaoImpl implements ForestDao {
+
+    Connection connection = null;
+    PreparedStatement preparedstatement = null;
+
+    public Connection getConnection() throws SQLException{
+        return DriverManager.getConnection("jdbc:mysql://localhost:3306/Databashantering", "root", "root");
+    }
+
+
     @Override
     public Owl createOwl(int wingSpan) {
         return null;

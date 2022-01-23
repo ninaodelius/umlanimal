@@ -27,8 +27,9 @@
 
         <!-- versions -->
         <junit.version>4.13.1</junit.version>
-        <spring.version>5.3.13</spring.version>
         <mysql.verson>8.0.28</mysql.verson>
+        <spring.version>5.3.13</spring.version>
+
 
 
     </properties>
@@ -51,6 +52,12 @@
                 <groupId>org.example</groupId>
                 <artifactId>umlanimal-dao</artifactId>
                 <version>${project.verson}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>umlanimal-dao-impl</artifactId>
+                <version>${project.verson}}</version>
             </dependency>
 
             <dependency>
